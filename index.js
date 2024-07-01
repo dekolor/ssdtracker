@@ -78,3 +78,7 @@ function run() {
 }
 
 run();
+
+setInterval(() => {
+  run();
+}, 1000 * 60 * process.env.INTERVAL_MINUTES);
